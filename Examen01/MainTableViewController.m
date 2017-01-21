@@ -37,6 +37,8 @@
     
     contador = 0;
     
+    //EL pull to refresh de la libreria, modifica el frame, por eso es que se ve de esa manera cuando termina de recargar o al inicio de la vista, no hubo tiempo de modificar
+    
     pullToRefreshManager_ = [[MNMBottomPullToRefreshManager alloc] initWithPullToRefreshViewHeight:60.0f
                                                                                          tableView:self.tableView
                                                                                         withClient:self];
